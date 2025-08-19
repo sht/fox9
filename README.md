@@ -1,6 +1,6 @@
-# fox9.de Homepage 11ty
+# fox9.de 11ty
 
-This repository contains the Eleventy-based website for [fox9.de](https://fox9.de), a private email domain.
+This repository contains the 11ty based website for [fox9.de](https://fox9.de), a private email domain.
 
 ## Overview
 
@@ -63,3 +63,5 @@ The built site will be in the `_site` directory, which can then be uploaded to y
 ## License
 
 This project is private and not licensed for public use or distribution.
+
+Built with ❤️ using 11ty and Netlify
