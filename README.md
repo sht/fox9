@@ -63,5 +63,3 @@ The built site will be in the `_site` directory, which can then be uploaded to y
 ## License
 
 This project is private and not licensed for public use or distribution.
-
-Built with ❤️ using 11ty and Netlify
