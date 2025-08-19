@@ -62,6 +62,14 @@ The built site will be in the `_site` directory, which can then be uploaded to y
 - Modify files in `_layouts/` and `_includes/` to change the site structure
 - Add custom styles to files in `src/assets/css/`
 
+## UI Features
+
+- Responsive layout with Bootstrap 5 integration
+- Compact header with warm gradient background
+- Side-by-side content layout on larger screens
+- Cards with equal height in the same row
+- Smooth animations and hover effects
+
 ## License
 
 There is no license! This project is so private, even the foxes don’t know about it. But honestly, if you want to use or reuse anything here, go wild—just don’t blame me if your code starts acting foxy.
