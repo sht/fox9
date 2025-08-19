@@ -1,5 +1,7 @@
 # fox9.de 🦊 11ty
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/08d237c2-f7c1-42a5-a6a6-d88aa36965dc/deploy-status)](https://app.netlify.com/projects/fox9/deploys)
+
 This repository contains the 11ty based website for [fox9.de](https://fox9.de), a private email domain.
 
 ## Overview
