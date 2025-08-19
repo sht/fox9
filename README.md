@@ -1,4 +1,4 @@
-# fox9.de 11ty
+# fox9.de 🦊 11ty
 
 This repository contains the 11ty based website for [fox9.de](https://fox9.de), a private email domain.
 
@@ -62,4 +62,4 @@ The built site will be in the `_site` directory, which can then be uploaded to y
 
 ## License
 
-This project is private and not licensed for public use or distribution.
+There is no license! This project is so private, even the foxes don’t know about it. But honestly, if you want to use or reuse anything here, go wild—just don’t blame me if your code starts acting foxy.
