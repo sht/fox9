@@ -1,0 +1,22 @@
+# Site settings
+title: fox9.de - Private Domain
+description: Private Email Domain
+baseurl: ""
+url: "https://fox9.de"
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .git
+  - .gitignore
+  - README.md
+  - error.log
