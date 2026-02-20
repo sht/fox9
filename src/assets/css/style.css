@@ -1,160 +1,70 @@
-:root {
-  /* Warm color palette */
-  --warm-bg: #fdf6ee;
-  --warm-accent: #f0c8a0;
-  --warm-text: #5a4a42;
-  --warm-border: #d4b999;
-  --warm-card-bg: #fff9f2;
-  --warm-footer-bg: #f7eee5;
-  
-  /* Typography */
-  --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  --font-heading: 'Playfair Display', Georgia, 'Times New Roman', serif;
-  
-  /* Spacing */
-  --spacing-xs: 0.5rem;
-  --spacing-sm: 1rem;
-  --spacing-md: 1.5rem;
-  --spacing-lg: 2rem;
-  --spacing-xl: 3rem;
-  
-  /* Shadows */
-  --shadow-light: 0 2px 10px rgba(90, 74, 66, 0.08);
-  --shadow-medium: 0 4px 20px rgba(90, 74, 66, 0.12);
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-/* Base styles */
 body {
-  font-family: var(--font-primary);
-  background-color: var(--warm-bg);
-  color: var(--warm-text);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #fafafa;
+  color: #333;
   line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-/* Header */
-.header-bg {
-  background: linear-gradient(135deg, var(--warm-bg) 0%, var(--warm-accent) 100%);
-  padding: var(--spacing-md) 0;
+header {
+  padding: 2rem 1rem;
   text-align: center;
-  box-shadow: var(--shadow-light);
+  background: #fff;
+  border-bottom: 1px solid #eee;
 }
 
-.header-bg h1 {
-  font-family: var(--font-heading);
-  font-weight: 700;
-  color: var(--warm-text);
-  margin-bottom: var(--spacing-xs);
-  font-size: 2.5rem;
+header h1 {
+  font-size: 1.75rem;
+  color: #222;
 }
 
-.header-bg p.lead {
+main {
+  flex: 1;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  width: 100%;
+}
+
+.box {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.box h2 {
   font-size: 1.25rem;
-  color: var(--warm-text);
-  opacity: 0.9;
+  margin-bottom: 0.75rem;
+  color: #222;
 }
 
-/* Main content */
-main.container {
-  max-width: 800px;
-  padding: var(--spacing-lg) var(--spacing-sm);
+.box p {
+  margin-bottom: 0.5rem;
+  color: #555;
 }
 
-/* Cards */
-.card {
-  background-color: var(--warm-card-bg);
-  border: none;
-  border-radius: 12px;
-  box-shadow: var(--shadow-light);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin-bottom: var(--spacing-sm);
-  overflow: hidden;
-  height: 100%;
+.box p:last-child {
+  margin-bottom: 0;
 }
 
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow-medium);
+.box.disclaimer {
+  border-left: 4px solid #e0e0e0;
 }
 
-.card-body {
-  padding: var(--spacing-lg);
-}
-
-.card-title {
-  font-family: var(--font-heading);
-  font-weight: 600;
-  color: var(--warm-text);
-  margin-bottom: var(--spacing-sm);
-}
-
-/* Disclaimer box */
-.disclaimer-box {
-  background-color: #fff4e6;
-  border-left: 5px solid var(--warm-accent);
-  border-radius: 0 8px 8px 0;
-  padding: var(--spacing-lg);
-  margin-bottom: var(--spacing-sm);
-  box-shadow: var(--shadow-light);
-  height: 100%;
-}
-
-.disclaimer-box h2 {
-  font-family: var(--font-heading);
-  font-weight: 600;
-  color: var(--warm-text);
-  margin-bottom: var(--spacing-sm);
-}
-
-/* Footer */
-.footer-bg {
-  background-color: var(--warm-footer-bg);
-  padding: var(--spacing-lg) 0;
-  margin-top: var(--spacing-xl);
+footer {
   text-align: center;
-  border-top: 1px solid var(--warm-border);
-}
-
-.footer-bg p {
-  margin-bottom: var(--spacing-xs);
-  color: var(--warm-text);
-  opacity: 0.8;
-}
-
-/* Responsive adjustments */
-@media (min-width: 768px) {
-  .header-bg h1 {
-    font-size: 3rem;
-  }
-  
-  main.container {
-    padding: var(--spacing-xl) var(--spacing-sm);
-  }
-}
-
-/* Animations */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.card, .disclaimer-box {
-  animation: fadeIn 0.6s ease-out forwards;
-}
-
-.card:nth-child(2) {
-  animation-delay: 0.1s;
-}
-
-.card:nth-child(3) {
-  animation-delay: 0.2s;
-}
-
-.disclaimer-box {
-  animation-delay: 0s;
+  padding: 1.5rem;
+  color: #777;
+  font-size: 0.875rem;
+  border-top: 1px solid #eee;
 }
